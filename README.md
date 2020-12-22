@@ -1,2 +1,2 @@
 # cms-test
-React APP to test the headless CMS functionality
+React App to test the headless CMS functionality
