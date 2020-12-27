@@ -1,6 +1,7 @@
 import React, { useState, useEffect }  from 'react';
 import "bootstrap/dist/js/bootstrap.min.js";
 import Axios from "axios";
+import { Container, Row, Col } from 'react-bootstrap';
 import "../styles/Testimonials.css";
 import TestimonialContainer from '../components/TestimonialContainer';
 const Testimonials = () => {
@@ -22,10 +23,10 @@ const Testimonials = () => {
 
     return (
         // here we pass in our testimonial data as a prop to TestimonialContainer
-        <>
+        <Container>
             <h1>Testimonials</h1>
             <TestimonialContainer testimonials={testimonials}/>
-        </>
+        </Container>
     )
 }
 
