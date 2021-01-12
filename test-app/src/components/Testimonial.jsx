@@ -1,19 +1,19 @@
 import React from 'react';
-import Card from "react-bootstrap/Card";
+import { Card } from "react-bootstrap";
 
 const Testimonial = (props) => {
-    return(
+    return (
         // Here we use a bootstrap card to display our testimonial data, passed in by props
         <>
-        <Card style={{ width: '70vw' }}>
-            <Card.Body>
-                <Card.Title>{props.testimonial.author}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">{props.testimonial._id}</Card.Subtitle>
-                <Card.Text>
-                    {props.testimonial.text}
-                </Card.Text>
-            </Card.Body>
-        </Card>
+            <Card className="mx-auto mb-3" style={{ width: '70vw' }}>
+                <Card.Body>
+                    <Card.Title>{props.testimonial.text}</Card.Title>
+                    <Card.Text>
+                        - {props.testimonial.author}
+                    </Card.Text>
+                    <Card.Subtitle className="text-muted">{props.testimonial._id}</Card.Subtitle>
+                </Card.Body>
+            </Card>
         </>
     )
 }
