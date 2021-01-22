@@ -23,9 +23,10 @@ const db = require("./db");
 let testimonialCollection;
 let peopleCollection;
 let textCollection;
+
 app.post('/projects/connect', async (req, res) => {
+    console.log(req.body);
     try {
-        //TODO: Verify project exists (from project collection)
         const proj = req.body.project;
 
         dbName = process.env.DB_NAME;

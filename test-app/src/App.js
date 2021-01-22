@@ -10,8 +10,8 @@ function App() {
 
   useEffect(() => {
     async function fetchData() {
-      const reqBody = { project: "test-app" };
-      await Axios.get("http://localhost:9000/projects/connect", reqBody);
+      const reqBody = { project: "test-project" };
+      await Axios.post("http://localhost:9000/projects/connect", reqBody);
     }
     fetchData();
   }, []);
