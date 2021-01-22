@@ -18,7 +18,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <NavbarContainer> </NavbarContainer>
+      <NavbarContainer/>
     </BrowserRouter>
 
   );
