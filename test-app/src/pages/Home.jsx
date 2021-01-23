@@ -10,7 +10,7 @@ const Home = () => {
 
         // to await Axios, we must wrap the call in a function (React is weird)
         async function fetchData() {
-            const result = await Axios.get("http://localhost:9000/textContent");
+            const result = await Axios.get("http://localhost:5000/cms-readonly/us-central1/app/textContent");
             const data = result.data;
             setText(data);
         }

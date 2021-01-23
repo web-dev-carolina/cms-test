@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import "./App.css";
 import NavbarContainer from "./components/NavbarContainer";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,8 +10,8 @@ function App() {
 
   useEffect(() => {
     async function fetchData() {
-      const reqBody = { project: "test-project" };
-      await Axios.post("http://localhost:9000/projects/connect", reqBody);
+      const reqBody = { "project": "test-project" };
+      await Axios.post("http://localhost:5000/cms-readonly/us-central1/app/projects/connect", reqBody);
     }
     fetchData();
   }, []);
