@@ -10,14 +10,13 @@ const Testimonials = () => {
 
     // useEffect is a react hook that allows us to make an async Axios request
     useEffect(() => {
-
         // to await Axios, we must wrap the call in a function (useEffect itself cannot be asynchronous)
         async function fetchData() {
             const result = await Axios.get("http://localhost:9000/testimonials");
             const data = result.data;
             setTestimonials(data);
         }
-        fetchData(); // immediately call the fn to request data 
+        fetchData(); // immediately call the fn to request data
     }, []);
 
     return (

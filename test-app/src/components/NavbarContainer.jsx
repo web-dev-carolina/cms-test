@@ -17,7 +17,6 @@ const NavbarContainer = () => {
                     <Nav.Link as={Link} to="/testimonials">Testimonials</Nav.Link>
                     <Nav.Link as={Link} to="/people">People</Nav.Link>
                 </Nav>
-
             </Navbar>
             <Switch>
                 <Route exact path="/" component={Home} />

@@ -11,7 +11,8 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       const reqBody = { "project": "test-project" };
-      await Axios.post("http://localhost:5000/cms-readonly/us-central1/app/projects/connect", reqBody);
+      // await Axios.post("http://localhost:5000/cms-readonly/us-central1/app/projects/connect", reqBody);
+      // ^ this should eventually connect to (only) the correct project so permissions are appropriate
     }
     fetchData();
   }, []);
